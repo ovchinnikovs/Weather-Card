@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Weather-Card/static/css/main.4e8a89e9.chunk.css",
+    "main.js": "/Weather-Card/static/js/main.3d84905c.chunk.js",
+    "main.js.map": "/Weather-Card/static/js/main.3d84905c.chunk.js.map",
+    "runtime~main.js": "/Weather-Card/static/js/runtime~main.c6358470.js",
+    "runtime~main.js.map": "/Weather-Card/static/js/runtime~main.c6358470.js.map",
+    "static/js/2.70f63a7a.chunk.js": "/Weather-Card/static/js/2.70f63a7a.chunk.js",
+    "static/js/2.70f63a7a.chunk.js.map": "/Weather-Card/static/js/2.70f63a7a.chunk.js.map",
+    "index.html": "/Weather-Card/index.html",
+    "precache-manifest.f8cd529563c10e06ee0dadfec6f5f525.js": "/Weather-Card/precache-manifest.f8cd529563c10e06ee0dadfec6f5f525.js",
+    "service-worker.js": "/Weather-Card/service-worker.js",
+    "static/css/main.4e8a89e9.chunk.css.map": "/Weather-Card/static/css/main.4e8a89e9.chunk.css.map",
+    "static/media/wu-icons-style.min.css": "/Weather-Card/static/media/unknown.aaa3d3bd.svg"
+  }
+}

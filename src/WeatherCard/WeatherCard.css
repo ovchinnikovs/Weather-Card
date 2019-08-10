@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Rajdhani&display=swap');
+
+.text-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px 40px 0;
+  color: rgb(122, 122, 122);
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif;
+}
+
+.date {
+  font-size: 28px;
+  width: 30%;
+  line-height: 40px;
+  letter-spacing: 7px;
+}
+
+.city {
+  font-size: 20px;
+}
+
+.temp-content {
+  display: flex;
+}
+
+.temp {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 110px;
+  margin-right: 10px;
+}
+
+.weather-week {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.day {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  height: 90px;
+}

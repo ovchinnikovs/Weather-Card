@@ -8,15 +8,9 @@ export default class WeatherCard extends React.Component {
         super(props);
 
         this.state = { weather: {} };
-
-        this.fetchWeatherData = this.fetchWeatherData.bind(this);
     }
 
-    componentDidMount() {
-        this.fetchWeatherData();
-    }
-
-    async fetchWeatherData() {
+    async componentDidMount() {
         const json = await fetch(`https://api.openweathermap.org/data/2.5/forecast/daily?q=Kharkiv&units=metric&cnt=7&appid=${API_KEY}`);
         const data = await json.json();
 
@@ -28,10 +22,10 @@ export default class WeatherCard extends React.Component {
         const { weather } = this.state;
         
         if (!weather.list) {
-            return null;
+            return <div>Loading...</div>;
         }
-
-        const weatherToday = weather.list[0];
+        console.log(weather)
+        const weatherToday = weather.list[1];
 
         return (
             <>
@@ -47,9 +41,9 @@ export default class WeatherCard extends React.Component {
 
                 <div className="weather-week">
                     {weather.list.map((day, index) => 
-                        <div className="day">
+                        <div key={index} className="day">
                             <div>{getDateFromDT(weather.list[index].dt, 'ddd')}</div>
-                            <Icon size="small" weatherType={weather.list[index].weather[0].main.toLowerCase()} />
+                            <Icon size="small" key={index} weatherType={weather.list[index].weather[0].main.toLowerCase()} />
                             <div>{Math.floor(weather.list[index].temp.day)}°</div>
                         </div>
                     )}

@@ -25,7 +25,7 @@ export default class WeatherCard extends React.Component {
             return <div>Loading...</div>;
         }
         console.log(weather)
-        const weatherToday = weather.list[1];
+        const weatherToday = weather.list[0];
 
         return (
             <>
